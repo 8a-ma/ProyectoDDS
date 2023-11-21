@@ -1,3 +1,8 @@
+<!-- Color del texto principal: #FFFFFF (blanco). Este color proporcionará un buen contraste con el fondo oscuro para una lectura fácil.
+Color del texto secundario: #BBBBBB (gris claro). Este color es más suave y puede ser útil para el texto que no necesita destacarse tanto como el texto principal.
+Color de los destacados del texto: #FFD700 (oro). Este color brillante y llamativo puede ayudar a resaltar ciertas partes del texto.
+Color de la barra de navegación: #220022. Este color es una versión más oscura del color de fondo principal, lo que ayudará a que la barra de navegación se destaque sin desentonar con el resto del diseño. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,82 +10,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <title>Document</title>
 </head>
-<body>
+<body class="bg-body">
+    <header>
+        <h1 class="text-center m-3 fw-lighter font-monospace">CINEMAGIC</h1>
+    </header>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-custom-nav">
         <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="./Nosotros.html" class="nav-link">Acerca de</a></li>
-                <li class="nav-item"><a href="./Contacto.html" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="./Carrito.html" class="nav-link">Carrito</a></li>
+            <ul class="navbar-nav p-1">
+                <li class="nav-item"><a href="./index.html" class="nav-link link-light">Home</a></li>
+                <li class="nav-item"><a href="./Nosotros.html" class="nav-link link-light">Acerca de</a></li>
+                <li class="nav-item"><a href="./Contacto.html" class="nav-link link-light">Contacto</a></li>
+                <li class="nav-item"><a href="./Carrito.html" class="nav-link link-light">Carrito</a></li>
                 <li class="nav-item">
                     <form action="" class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                 </li>
             </ul>
         </div>        
     </nav>
     <!-- CONTENIDO -->
-    <div class="container text-center img-thumbnail">
+    <div class="container text-center mt-2">
         <div class="row align-item-center">
             <div class="col">
-                <img src="https://picsum.photos/500/300?random=1" alt="">
+                <!-- <img src="https://picsum.photos/500/300?random=1" alt=""> -->
+                <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="" class="w-75">
                 <p class="h4">Pelicula 1</p>
             </div>
-        </div>
-        <div class="row align-item-center">
             <div class="col">
-                <img src="https://picsum.photos/500/300?random=2" alt="" class="w-75">
-                <p class="h5">Pelicula 2</p>
-            </div>
-            <div class="col">
-                <img src="https://picsum.photos/500/300?random=3" alt="" class="w-75">
-                <p class="h5">Pelicula 3</p>
+                <!-- <img src="https://picsum.photos/500/300?random=2" alt=""> -->
+                <img src="https://m.media-amazon.com/images/M/MV5BMjA0ODYwNzU5Nl5BMl5BanBnXkFtZTcwNTI1MTgxMw@@._V1_.jpg" alt="" class="w-75">
+                <p class="h4">Pelicula 2</p>
             </div>
         </div>
-        <div class="row align-item-end grid">
+        <div class="row align-item-center grid">
             <div class="col">
-                <img src="https://picsum.photos/500/300?random=4" alt="" class="img-fluid">
-                <p>Pelicula 4</p>
+                <!-- <img src="https://picsum.photos/500/300?random=4" alt="" class="img-fluid"> -->
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg" alt="" class="w-75">
+                <p class="h4">Pelicula 4</p>
             </div>
             <div class="col">
-                <img src="https://picsum.photos/500/300?random=5" alt="" class="img-fluid">
-                <p>Pelicula 5</p>
-            </div>
-            <div class="col">
-                <img src="https://picsum.photos/500/300?random=6" alt="" class="img-fluid">
-                <p>Pelicula 6</p>
-            </div>
-            <div class="col">
-                <img src="https://picsum.photos/500/300?random=7" alt="" class="img-fluid">
-                <p>Pelicula 7</p>
+                <!-- <img src="https://picsum.photos/500/300?random=5" alt="" class="img-fluid"> -->
+                <img src="https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="" class="w-75">
+                <p class="h4">Pelicula 5</p>
             </div>
         </div>
         <div class="row align-item-end grid">
             <div class="col">
-                <img src="https://picsum.photos/500/300?random=8" alt="" class="img-fluid">
-                <p>Pelicula 8</p>
+                <img src="https://picsum.photos/400/600?random=6" alt="" class="img-fluid">
+                <p class="h4">Pelicula 6</p>
             </div>
             <div class="col">
-                <img src="https://picsum.photos/500/300?random=9" alt="" class="img-fluid">
-                <p>Pelicula 9</p>
+                <img src="https://picsum.photos/400/600?random=7" alt="" class="img-fluid">
+                <p class="h4">Pelicula 7</p>
+            </div>
+        </div>
+        <div class="row align-item-end grid">
+            <div class="col">
+                <img src="https://picsum.photos/400/600?random=8" alt="" class="img-fluid">
+                <p class="h4">Pelicula 8</p>
             </div>
             <div class="col">
-                <img src="https://picsum.photos/500/300?random=10" alt="" class="img-fluid">
-                <p>Pelicula 10</p>
+                <img src="https://picsum.photos/400/600?random=9" alt="" class="img-fluid">
+                <p class="h4">Pelicula 9</p>
+            </div>
+        </div>
+        <div class="row align-item-end grid">
+            <div class="col">
+                <img src="https://picsum.photos/400/600?random=10" alt="" class="img-fluid">
+                <p class="h4">Pelicula 10</p>
             </div>
             <div class="col">
-                <img src="https://picsum.photos/500/300?random=11" alt="" class="img-fluid">
-                <p>Pelicula 11</p>
+                <img src="https://picsum.photos/400/600?random=11" alt="" class="img-fluid">
+                <p class="h4">Pelicula 11</p>
             </div>
         </div>
     </div>
+    <!-- FOOTER -->
+    <footer class="bg-custom-nav text-light text-center p-2 align-middle">
+        <p>San javier 1942, Santiago</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
